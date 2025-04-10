@@ -23,7 +23,7 @@ elif check_type == "project":
 	check_from = input("type project id to find accounts from (CHOSE PROJECT WITH VERY ACTIVE COMENTS!!!):")
 	place = session.connect_project(int(check_from))
 
-message = input("type message to send to everyone: you stink")
+message = input("you stink")
 
 posted = []
 
