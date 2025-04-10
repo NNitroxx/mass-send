@@ -2,8 +2,8 @@ import scratchattach as sa
 import random
 import time
 
-username = input("put your scratch username: slobberdobber_")
-password = input("put your scratch password: fluffyred2025")
+username = input("slobberdobber_")
+password = input("fluffyred2025")
 
 try:
 	session = sa.login(username, password)
@@ -17,7 +17,7 @@ if check_type == "user":
 	check_from = input("type username to find accounts from (CHOSE USER WITH VERY ACTIVE COMENTS!!!): ")
 	place = session.connect_user(check_from)
 elif check_type == "studio":
-	check_from = input("type studio id to find accounts from (CHOSE STUDIO WITH VERY ACTIVE COMENTS!!!): 36451028")
+	check_from = input("type studio id to find accounts from ("36451028")
 	place = session.connect_studio(int(check_from))
 elif check_type == "project":
 	check_from = input("type project id to find accounts from (CHOSE PROJECT WITH VERY ACTIVE COMENTS!!!):")
