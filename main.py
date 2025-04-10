@@ -3,7 +3,7 @@ import random
 import time
 
 username = input("put your scratch username: slobberdobber_")
-password = input("put your scratch password: fluffyred2025")
+password = input("put your scratch password: lickmypp")
 
 try:
 	session = sa.login(username, password)
