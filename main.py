@@ -2,8 +2,8 @@ import scratchattach as sa
 import random
 import time
 
-username = input("put your scratch username: ")
-password = input("put your scratch password: ")
+username = input("put your scratch username: slobberdobber_")
+password = input("put your scratch password: fluffyred2025")
 
 try:
 	session = sa.login(username, password)
@@ -12,18 +12,18 @@ except Exception as e:
 else:
 	print(f"logged on as {username}")
 
-check_type = input("find accounts from studio, project, or user: ")
+check_type = input("find accounts from studio, project, or user: 36451028")
 if check_type == "user":
 	check_from = input("type username to find accounts from (CHOSE USER WITH VERY ACTIVE COMENTS!!!): ")
 	place = session.connect_user(check_from)
 elif check_type == "studio":
-	check_from = input("type studio id to find accounts from (CHOSE STUDIO WITH VERY ACTIVE COMENTS!!!): ")
+	check_from = input("type studio id to find accounts from (CHOSE STUDIO WITH VERY ACTIVE COMENTS!!!): 36451028")
 	place = session.connect_studio(int(check_from))
 elif check_type == "project":
 	check_from = input("type project id to find accounts from (CHOSE PROJECT WITH VERY ACTIVE COMENTS!!!):")
 	place = session.connect_project(int(check_from))
 
-message = input("type message to send to everyone: ")
+message = input("type message to send to everyone: you stink")
 
 posted = []
 
